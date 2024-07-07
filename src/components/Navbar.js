@@ -23,10 +23,10 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed w-full py-4 px-20 ${navbarStyle} transition-all duration-500`}>
+        <nav className={`z-20 fixed w-full py-4 px-20 ${navbarStyle} transition-all duration-500`}>
             <div className='flex justify-between items-center'>
-                <div className={`h-[90px] w-[180px] ${collapsed ? "scale-100" : "scale-125"} duration-500`}>
-                    <img src={mottoLogo} alt='logo' className='h-full' />
+                <div className={`${collapsed ? "scale-100" : "scale-125"} duration-500`}>
+                    <img src={mottoLogo} alt='logo' className='w-[180px]' />
                 </div>
                 <div className={`flex space-x-8 font-semibold text-lg duration-500 ${collapsed ? "text-lg" : "text-xl"}`}>
                     <a href='about'>About</a>
