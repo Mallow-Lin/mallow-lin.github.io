@@ -1,6 +1,5 @@
 import React from 'react'
 import About from './About'
-import Footer from './Footer'
 import Service from './Service'
 
 const Home = () => {
@@ -9,9 +8,8 @@ const Home = () => {
             <div>
                 <img src='https://image.cnbcfm.com/api/v1/image/106811484-1608045351058-gettyimages-1126750618-dsc_1540.jpeg?v=1608045431' className='w-full h-screen' />
             </div>
-            <About/>
-            <Service/>
-            <Footer/>
+            <About />
+            <Service />
         </div>
     )
 }
