@@ -1,11 +1,11 @@
 import React from 'react'
-import mottoLogo from '../../assets/images/logo_with_motto.png'
+import mottoLogo from '../assets/images/logo_with_motto.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col justify-center bg-[#1b6666] '>
+        <div className='flex flex-col justify-center bg-[#1b6666]'>
             <div className='flex justify-center h-[315px] py-14'>
                 <div className='flex flex-col w-[320px] space-y-2'>
                     <img src={mottoLogo} alt='logo' className='w-[200px]' />
