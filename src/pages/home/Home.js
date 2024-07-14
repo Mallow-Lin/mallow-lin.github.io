@@ -2,7 +2,7 @@ import React from 'react'
 import About from './About'
 import Service from './Service'
 
-const Home = (props) => {
+const Home = () => {
     return (
         <div>
             <div>

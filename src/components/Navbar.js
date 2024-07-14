@@ -20,10 +20,6 @@ const Navbar = (props) => {
         setTabUnderlineLeft(currentTab?.offsetLeft ?? 0)
     }
 
-    useEffect(() => {
-        setTabPosition(activeTabIndex)
-    }, [activeTabIndex])
-
     const [navbarStyle, setNavbarStyle] = useState('bg-white text-black pt-8');
     const [collapsed, setCollapsed] = useState(false);
 
@@ -38,6 +34,17 @@ const Navbar = (props) => {
             setCollapsed(false)
         }
     }
+
+    useEffect(() => {
+        setTabPosition(activeTabIndex)
+    }, [activeTabIndex])
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setTabPosition(activeTabIndex)
+        }, 510)
+        return () => clearTimeout(timer)
+    }, [collapsed])
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -83,7 +90,7 @@ const Navbar = (props) => {
                                         setActiveTabIndex(index)
                                         window.scrollTo(0, 0)
                                     }}
-                                    className={`px-4 duration-100 ${isActive ? "text-[#ecb403]" : "hover:text-[$ecb403]"}`}
+                                    className={`px-4 duration-100 ${isActive ? "text-[#ecb403]" : "hover:text-[#ecb403]"}`}
                                 >
                                     {tab}
                                 </Link>
