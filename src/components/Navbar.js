@@ -3,14 +3,20 @@ import { useNavigate, Link } from 'react-router-dom';
 import mottoLogo from '../assets/images/logo_with_motto.png'
 
 const tabs = [
-    "About", "Services", "Resources", "Work", "Contact"
+    "About", "Services", "Projects", "Contact"
 ]
 
 const Navbar = (props) => {
+    const {
+        setNavbarHeight,
+        activeTabIndex,
+        setActiveTabIndex
+    } = props
+
     const navbarRef = useRef(null)
 
     const tabsRef = useRef([])
-    const [activeTabIndex, setActiveTabIndex] = useState(null)
+
     const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0)
     const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0)
 
@@ -55,7 +61,7 @@ const Navbar = (props) => {
 
     useEffect(() => {
         if (navbarRef.current) {
-            props.setNavbarHeight(navbarRef.current.offsetHeight)
+            setNavbarHeight(navbarRef.current.offsetHeight)
         }
     }, [navbarRef.current])
 

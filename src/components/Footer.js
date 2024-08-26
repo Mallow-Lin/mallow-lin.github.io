@@ -2,8 +2,14 @@ import React from 'react'
 import mottoLogo from '../assets/images/logo_with_motto.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import services from '../data/services';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = (props) => {
+    const {
+        setActiveTabIndex
+    } = props
+
     return (
         <div className='flex flex-col justify-center bg-[#1b6666]'>
             <div className='flex justify-center h-[315px] py-14'>
@@ -14,23 +20,37 @@ const Footer = () => {
                 <div className='border-[#3f3f3f] border-l-[1px] border-solid h-full mx-20'></div>
                 <div className='flex flex-col w-[250px] items-center space-y-4 text-[#ecb403]'>
                     <p className='text-[30px] font-bold font-oswald'>Services</p>
-                    <p className='text-[18px] font-aleo'>Statement of Responsibility</p>
-                    <p className='text-[18px] font-aleo'>Pile Driving</p>
-                    <p className='text-[18px] font-aleo'>Energy Code Compliance</p>
+                    {
+                        services.map((service, index) => {
+                            return (
+                                <Link
+                                    key={index}
+                                    onClick={() => {
+                                        setActiveTabIndex(1)
+                                        window.scrollTo(0, 0)
+                                    }}
+                                    to={"/services"}
+                                    className='text-[18px] font-aleo'
+                                >
+                                    {service.name}
+                                </Link>
+                            )
+                        })
+                    }
                 </div>
                 <div className='border-[#3f3f3f] border-l-[1px] border-solid h-full mx-20'></div>
                 <div className='flex flex-col items-start space-y-4 text-[#ecb403]'>
                     <p className='text-[30px] font-bold font-oswald'>Contact</p>
                     <div className='flex space-x-4 items-center text-[18px]'>
-                        <FontAwesomeIcon icon={faMapMarkerAlt}/>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} />
                         <p className='font-merriweather'>10 Hallets Point, Astoria, NY, 11102</p>
                     </div>
                     <div className='flex space-x-4 items-center text-[18px]'>
-                        <FontAwesomeIcon icon={faEnvelope}/>
+                        <FontAwesomeIcon icon={faEnvelope} />
                         <p className='text-[18px] font-merriweather'>welldoneinspection@gmail.com</p>
                     </div>
                     <div className='flex space-x-4 items-center text-[18px]'>
-                        <FontAwesomeIcon icon={faPhone}/>
+                        <FontAwesomeIcon icon={faPhone} />
                         <p className='text-[18px] font-merriweather'>(917) 214-1886</p>
                     </div>
                 </div>

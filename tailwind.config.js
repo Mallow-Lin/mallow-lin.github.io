@@ -19,4 +19,12 @@ module.exports = {
         },
     },
     plugins: [],
+    safelist: [
+        'translate-y-0',
+        'translate-x-0',
+        'translate-x-full',
+        'translate-y-full',
+        '-translate-x-full',
+        '-translate-y-full',
+    ]
 }

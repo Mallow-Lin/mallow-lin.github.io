@@ -1,11 +1,20 @@
 import React from 'react'
 
 const SlideInWrapper = (props) => {
-    const fromTopLeft = (props.direction === "right" || props.direction === "bottom") ? false : true
-    const isHorizontal = (props.direction === "top" || props.direction === "bottom") ? false : true
+    const isNeg = (props.direction === "right" || props.direction === "bottom") ? "" : "-"
+    const xOrY = (props.direction === "top" || props.direction === "bottom") ? "y" : "x"
+    const inViewPosition = `translate-${xOrY}-0`
+    const outViewPosition = isNeg + inViewPosition.replace("0", "full")
+    const animationDuration = props.duration ? `duration-${props.duration}` : "duration-1000"
 
     return (
-        <div className={`${props.className} ${props.isInView ? `translate-${isHorizontal ? "x" : "y"}-0 opacity-100` : `${fromTopLeft ? "-" : ""}translate-${isHorizontal ? "x" : "y"}-full opacity-0`} ${props.duration ? `duration-${props.duration}` : "duration-1000"}`}>
+        <div
+            className={`
+            ${props.className}
+            ${props.isInView ? `${inViewPosition} opacity-100` : `${outViewPosition} opacity-0`}
+            ${animationDuration}
+            `}
+        >
             {props.children}
         </div>
     )

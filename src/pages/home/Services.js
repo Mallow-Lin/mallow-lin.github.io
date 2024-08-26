@@ -1,14 +1,19 @@
 import React from 'react'
 import services from '../../data/services'
+import { Link } from 'react-router-dom'
 
-const Service = () => {
+const Services = (props) => {
+    const {
+        setActiveTabIndex
+    } = props
+
     return (
         <div className='flex flex-col items-center justify-center py-20 px-40 space-y-10 bg-gray-100'>
             <div className='text-[50px] font-semibold'>Services</div>
             <div className='flex w-full justify-center items-center space-x-36'>
                 {
                     services.map((service, index) => {
-                        return <ServiceCard key={index} service={service} />
+                        return <ServiceCard key={index} service={service} setActiveTabIndex={setActiveTabIndex} />
                     })
                 }
             </div>
@@ -17,7 +22,12 @@ const Service = () => {
     )
 }
 
-const ServiceCard = ({ service }) => {
+const ServiceCard = (props) => {
+    const {
+        service,
+        setActiveTabIndex
+    } = props
+
     return (
         <div className={`group h-[400px] w-[300px] bg-[#808080] rounded-xl shadow-card overflow-hidden flex relative justify-center items-center duration-[0.8s]
         bg-center bg-no-repeat bg-[length:300px] hover:bg-left hover:bg-[length:600px]`}
@@ -27,11 +37,20 @@ const ServiceCard = ({ service }) => {
             group-hover:border-[1px] group-hover:border-white group-hover:border-solid'>
                 <p className='text-left text-[15px] px-[15px] text-transparent
                 group-hover:text-white duration-500'>{service.shortDescription}</p>
-                <button className='py-[10px] px-[20px] font-roboto text-white border-white border-[1px] text-[13px] opacity-0 
-                group-hover:opacity-100 hover:bg-[#1b6666] hover:text-[#ecb403] duration-300'>LEARN MORE</button>
+                <Link
+                    onClick={() => {
+                        setActiveTabIndex(1)
+                        window.scrollTo(0, 0)
+                    }}
+                    to={"/services"}
+                    className='py-[10px] px-[20px] font-roboto text-white border-white border-[1px] text-[13px] opacity-0 
+                    group-hover:opacity-100 hover:bg-[#1b6666] hover:text-[#ecb403] duration-300'
+                >
+                    LEARN MORE
+                </Link>
             </div>
         </div>
     )
 }
 
-export default Service
+export default Services

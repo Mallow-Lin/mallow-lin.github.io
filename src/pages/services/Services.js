@@ -2,6 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer'
 import SlideInWrapper from '../../animation-wrappers/SlideInWrapper'
 import services from '../../data/services'
+import { Link } from 'react-router-dom'
 
 const Service = (props) => {
     const serviceRefs = []
@@ -15,12 +16,11 @@ const Service = (props) => {
 
 
     return (
-        <div className='flex flex-col p-10 overflow-x-hidden' style={{ paddingTop: props.topPadding + 50 }}>
+        <div className='flex flex-col p-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
             <p className='font-semibold font-aleo text-[60px]'>Services</p>
             <div className=''>
                 {
                     services.map((service, index) => {
-                        console.log(serviceRefs)
                         return (
                             <div key={index} ref={serviceRefs[index]}>
                                 <SlideInWrapper
@@ -29,7 +29,12 @@ const Service = (props) => {
                                     <ServiceCard service={service} />
                                     <div className='flex flex-col justify-center items-start space-y-6'>
                                         <p>{service.longDescription}</p>
-                                        <button className='inline-block border-2 border-black py-[7px] px-[15px] font-roboto hover:bg-[#1b6666] hover:text-[#ecb403] duration-300'>Learn More</button>
+                                        <Link
+                                            to={service.link}
+                                            className='inline-block border-2 border-black py-[7px] px-[15px] font-roboto hover:bg-[#1b6666] hover:text-[#ecb403] duration-300'
+                                        >
+                                            Learn More
+                                        </Link>
                                     </div>
                                 </SlideInWrapper>
                             </div>

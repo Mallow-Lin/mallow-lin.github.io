@@ -5,12 +5,15 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About"
-import Service from "./pages/service/Service";
+import Service from "./pages/services/Services";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 import { useState } from "react";
+import Contact from "./pages/contact/Contact";
+import Projects from "./pages/projects/Projects"
 
 function App() {
+    const [activeTabIndex, setActiveTabIndex] = useState(null)
     const [navbarHeight, setNavbarHeight] = useState(0)
 
     const handleSetNavbarHeight = (value) => {
@@ -19,16 +22,27 @@ function App() {
 
     return (
         <Router>
-            <Navbar setNavbarHeight={handleSetNavbarHeight} />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About topPadding={navbarHeight} />} />
-                <Route path="/Services" element={<Service topPadding={navbarHeight} />} />
-                <Route path="/Resources" element={<About topPadding={navbarHeight} />} />
-                <Route path="/Work" element={<About topPadding={navbarHeight} />} />
-                <Route path="/Contact" element={<About topPadding={navbarHeight} />} />
-            </Routes>
-            <Footer />
+            <Navbar
+                setNavbarHeight={handleSetNavbarHeight}
+                activeTabIndex={activeTabIndex}
+                setActiveTabIndex={setActiveTabIndex}
+            />
+            <div className="flex justify-center overflow-x-hidden">
+                <div className="w-[90%] shadow-2xl">
+                    <Routes>
+                        <Route path="/" element={<Home setActiveTabIndex={setActiveTabIndex} />} />
+                        <Route path="/About" element={<About
+                            topPadding={navbarHeight}
+                            setActiveTabIndex={setActiveTabIndex}
+                        />}
+                        />
+                        <Route path="/Services" element={<Service topPadding={navbarHeight} />} />
+                        <Route path="/Projects" element={<Projects topPadding={navbarHeight} />} />
+                        <Route path="/Contact" element={<Contact topPadding={navbarHeight} />} />
+                    </Routes>
+                </div>
+            </div>
+            <Footer setActiveTabIndex={setActiveTabIndex} />
         </Router>
     );
 }

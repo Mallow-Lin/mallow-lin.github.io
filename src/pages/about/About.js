@@ -4,16 +4,21 @@ import { useInView } from 'react-intersection-observer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
 import SlideInWrapper from '../../animation-wrappers/SlideInWrapper.js'
+import { Link } from 'react-router-dom';
 
 const About = (props) => {
-    const { ref: blockRef, inView: blockInView } = useInView({ triggerOnce: true })
+    const {
+        setActiveTabIndex
+    } = props
+
+    const { ref: blockRef, inView: blockInView } = useInView({})
 
     return (
-        <div className='justify-center flex pb-10 overflow-x-hidden' style={{ paddingTop: props.topPadding + 50 }}>
+        <div className='justify-center flex pb-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
             <div ref={blockRef}
                 className={`flex flex-col items-center w-screen`} >
                 <SlideInWrapper isInView={blockInView} direction="top">
-                    <p className={`text-[60px] font-semibold font-aleo`}>ABOUT US</p>
+                    <p className={`text-[60px] font-semibold font-aleo`}>About Us</p>
                 </SlideInWrapper>
                 <div className='flex flex-col w-2/3 rounded-3xl py-10 items-center bg-gray-200'>
                     <div className='flex space-x-4 items-center px-4'>
@@ -30,10 +35,16 @@ const About = (props) => {
                         </SlideInWrapper>
                     </div>
                     <SlideInWrapper className="w-full flex justify-center" isInView={blockInView} direction="bottom">
-                        <button className="flex justify-center items-center group space-x-4 w-1/2 hover:w-3/5 hover:text-[#ecb403] border-[3px] px-6 py-3 mt-6 font-semibold rounded-xl border-white hover:border-[#ecb403] hover:bg-[#1b6666] duration-500">
+                        <Link
+                            onClick={() => {
+                                setActiveTabIndex(3)
+                                window.scrollTo(0, 0)
+                            }}
+                            to={`/contact`}
+                            className="flex justify-center items-center group space-x-4 w-1/2 hover:w-3/5 hover:text-[#ecb403] border-[3px] px-6 py-3 mt-6 font-semibold rounded-xl border-white hover:border-[#ecb403] hover:bg-[#1b6666] duration-500">
                             <p className='-mr-6 group-hover:mr-0 duration-500'>We are easy to find. Let us know your needs.</p>
                             <FontAwesomeIcon icon={faComments} className='opacity-0 group-hover:flex group-hover:opacity-100 duration-500' />
-                        </button>
+                        </Link>
                     </SlideInWrapper>
                 </div>
             </div>
