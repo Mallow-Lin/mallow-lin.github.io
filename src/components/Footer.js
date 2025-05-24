@@ -15,12 +15,12 @@ const Footer = (props) => {
             <div className='flex justify-center h-[315px] py-14'>
                 <div className='flex flex-col w-[320px] space-y-2'>
                     <img src={mottoLogo} alt='logo' className='w-[200px]' />
-                    <p className='text-[#ecb403] font-serif'>WellDone Inspection Inc is a DOB Class Two special inspections agency committed to providing comprehensive engineering reports.</p>
+                    <p className='text-[#ecb403] font-serif'>We are MWBE - certified Minority and Women-owned Business Enterprise.</p>
                 </div>
                 <div className='border-[#3f3f3f] border-l-[1px] border-solid h-full mx-20'></div>
                 <div className='flex flex-col w-[250px] items-center space-y-4 text-[#ecb403]'>
                     <p className='text-[30px] font-bold font-oswald'>Services</p>
-                    {
+                    {/* {
                         services.map((service, index) => {
                             return (
                                 <Link
@@ -36,7 +36,12 @@ const Footer = (props) => {
                                 </Link>
                             )
                         })
-                    }
+                    } */}
+                      <p className='font-merriweather'>TR Inspections</p>
+                      <p className='font-merriweather'>Engineering</p>
+                      <p className='font-merriweather'>TPP</p>
+                      <p className='font-merriweather'>SSP</p>
+                      <p className='font-merriweather'>Structural Shop Drawings</p>
                 </div>
                 <div className='border-[#3f3f3f] border-l-[1px] border-solid h-full mx-20'></div>
                 <div className='flex flex-col items-start space-y-4 text-[#ecb403]'>
@@ -47,16 +52,16 @@ const Footer = (props) => {
                     </div>
                     <div className='flex space-x-4 items-center text-[18px]'>
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <p className='text-[18px] font-merriweather'>welldoneinspection@gmail.com</p>
+                        <p className='text-[18px] font-merriweather'>welldoneinspect@gmail.com</p>
                     </div>
                     <div className='flex space-x-4 items-center text-[18px]'>
                         <FontAwesomeIcon icon={faPhone} />
-                        <p className='text-[18px] font-merriweather'>(917) 214-1886</p>
+                        <p className='text-[18px] font-merriweather'>(917) 213-1886</p>
                     </div>
                 </div>
             </div>
             <div className='flex justify-center items-center h-[50px] bg-[#3f3f3f] space-x-4'>
-                <p className='text-white font-semibold'>@ 2024 WellDone Inspection, Inc. All rights reserved.</p>
+                <p className='text-white font-semibold'>@ 2025 WellDone Inspection, Inc. All rights reserved.</p>
                 <p className='font-medium text-blue-400'>Terms of Service</p>
                 <p className='font-medium text-blue-400'> Privacy Policy</p>
             </div>

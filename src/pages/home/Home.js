@@ -1,21 +1,32 @@
 import React from 'react'
 import About from './About'
+import Qualifications from './Qualifications'
 import Services from './Services'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+
+import headerImage from '../../assets/images/headerImage.png'
+
 
 const Home = (props) => {
     const {
         setActiveTabIndex
     } = props
 
+    const checkScreenSize = () => {
+        if (window.innerWidth < 768) {
+            return true;
+    }
+}
+
     return (
-        <div>
+        <div className = {`${checkScreenSize ? "w-full" : ""}`}>
             <div>
-                <img src='https://image.cnbcfm.com/api/v1/image/106811484-1608045351058-gettyimages-1126750618-dsc_1540.jpeg?v=1608045431' className='scale-x-125 w-full h-screen' />
+                <img src={headerImage} className='mx-auto w-30'/>
             </div>
             <About />
+            <Qualifications />
             <Services setActiveTabIndex={setActiveTabIndex} />
             <div className='w-full justify-center flex'>
                 <Link

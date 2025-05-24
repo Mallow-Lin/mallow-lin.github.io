@@ -28,10 +28,19 @@ const About = (props) => {
                         </SlideInWrapper>
                         <SlideInWrapper isInView={blockInView} direction="right">
                             <div className="flex flex-col p-4 space-y-2 text-xl font-aleo">
-                                <p>WellDone Inspection Inc. is a full service quality control company & Special Inspection Agency. We are accredited by NYCDOB and registered with DOB Class Two with our team of highly skilled engineers and inspectors, certified by ACI, ICC, and AWS.
-                                </p>
-                                <p>Located at the center of New York City, we stand at the forefront of ensuring building safety and excellence across the vibrant landscape of New York City. We specialize in comprehensive Civil, Structural, and Mechanical Inspections, all conducted with the commitment to code compliance and industry standards.</p>
-                            </div>
+                                <p className="mt-3 mb-3">WellDone Inspection, Inc. is a New York City–based DOB-registered Special Inspection Agency dedicated to delivering accurate, code-compliant, and timely special inspections for construction projects of all scales. As a small business, we pride ourselves on offering the attention to detail, responsiveness, and accountability that larger firms often can't match.</p>
+                                <p className="mt-3 mb-3">Founded by a licensed professional engineer with over 10 years of experience in structural engineering and construction oversight, our mission is simple:
+                                    Support builders, owners, and developers in building safe, durable, and code-compliant structures.</p>
+
+                                <p className="font-bold">What We Do</p>
+                                <p>We provide third-party Special Inspections as required by the NYC Building Code (Chapter 17), including but not limited to:</p>
+                                    <li>Structural Steel & Welding Inspections</li>
+                                    <li>Concrete Placement & Rebar</li>
+                                    <li>Soils, Footings, and Deep Foundations (Piles, Caissons, Helical Piers)</li>
+                                    <li>Wood Framing & Shear Walls</li>
+                                    <li>EIFS & Fireproofing</li>
+                                    <li>Energy Code Compliance Inspections</li>
+                                    <li>Excavation and Underpinning Oversight</li>                            </div>
                         </SlideInWrapper>
                     </div>
                     <SlideInWrapper className="w-full flex justify-center" isInView={blockInView} direction="bottom">

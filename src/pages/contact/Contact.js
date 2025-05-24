@@ -21,8 +21,8 @@ const Contact = (props) => {
                     </div>
                     <div className='mb-6'>
                         <h3 className='text-black text-[18px] font-semibold mb-1'>Contacts</h3>
-                        <p>Email: welldoneinspection@gmail.com</p>
-                        <p>Phone: (917) 214-1886</p>
+                        <p>Email: welldoneinspect@gmail.com</p>
+                        <p>Phone: (917) 213-1886</p>
                     </div>
                     <p>If you're a current or past client and have feedback for us, we want to hear from you. Please leave us a message or review here and let us know how we are doing!</p>
                 </div>
