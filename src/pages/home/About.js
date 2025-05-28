@@ -4,18 +4,31 @@ import logo_no_motto from '../../assets/images/logo_no_motto.png'
 
 const About = () => {
     return (
-        <div className='flex space-x-8 py-20 px-40'>
-            <div className='flex flex-col justify-between flex-grow'>
-                <div className='flex items-center'>
-                    <p className='text-[35px] font-bold'>About Us</p>
-                    <hr className='border-1 border-black flex-grow mx-4'></hr>
-                </div>
-                <h2 className='font-serif text-[20px] mb-6'>
-                    <p className="mt-3 mb-3">WellDone Inspection, Inc. is a New York City–based DOB-registered Special Inspection Agency dedicated to delivering accurate, code-compliant, and timely special inspections for construction projects of all scales. As a small business, we pride ourselves on offering the attention to detail, responsiveness, and accountability that larger firms often can't match.</p>
-                    <p className="mt-3 mb-3">Founded by a licensed professional engineer with over 10 years of experience in structural engineering and construction oversight, our mission is simple:
-Support builders, owners, and developers in building safe, durable, and code-compliant structures.</p>
+        <div className='flex flex-col md:space-x-8 px-10 lg:px-40'>
+            <div className='flex flex-row'>
+                <div className='flex flex-col justify-between flex-grow'>
+                    <div className='flex items-center'>
+                        <p className='md:text-[35px] font-bold text-[20px]'>About Us</p>
+                        <hr className='border-1 border-black flex-grow mx-4'></hr>
+                    </div>
+                    <h2 className='font-serif md:text-[20px] text-[15px]'>
+                        <p className="mt-3 mb-3">WellDone Inspection, Inc. is a New York City–based DOB-registered Special Inspection Agency dedicated to delivering accurate, code-compliant, and timely special inspections for construction projects of all scales. As a small business, we pride ourselves on offering the attention to detail, responsiveness, and accountability that larger firms often can't match.</p>
+                        <p className="mt-3 mb-3">Founded by a licensed professional engineer with over 10 years of experience in structural engineering and construction oversight, our mission is simple:
+    Support builders, owners, and developers in building safe, durable, and code-compliant structures.</p>
+                    </h2>
 
-                    <p className="mt-10 mb-3">What We Do</p>
+                </div>
+                <div className='group relative sm:left-5 lg:left-20 flex-none size-[100px] md:size-[200px] lg:size-[250px]'>
+                    <img src={logo_no_motto} alt='logo' className='absolute w-full h-full object-fill border-2 rounded-3xl bg-white ml-[-5px] mt-[-5px] group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 z-10' />
+                    <div className='bg-white border-4 w-full h-full rounded-3xl flex items-end justify-center p-1
+                    ml-[20px] mt-[35px] md:ml-[0px] md:mt-[0px]  md:group-hover:translate-x-[10px] md:group-hover:translate-y-[30px] duration-500'>
+                        <p className='font-bold text-[10px] md:text-sm lg:text-lg'>James Jiang, P.E., Director</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p className="mb-3 font-bold text-[20px]">What We Do</p>
+                <div className='font-serif text-[15px] md:text-[20px]'>
                     <p>We provide third-party Special Inspections as required by the NYC Building Code (Chapter 17), including but not limited to:</p>
                     <li>Structural Steel & Welding Inspections</li>
                     <li>Concrete Placement & Rebar</li>
@@ -24,16 +37,9 @@ Support builders, owners, and developers in building safe, durable, and code-com
                     <li>EIFS & Fireproofing</li>
                     <li>Energy Code Compliance Inspections</li>
                     <li>Excavation and Underpinning Oversight</li>
-                </h2>
-                <hr className='border-1 border-black mr-3'></hr>
-            </div>
-            <div className='group relative flex-none size-[300px]'>
-                <img src={logo_no_motto} alt='logo' className='absolute w-full h-full object-fill border-2 rounded-3xl bg-white ml-[-5px] mt-[-5px] group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 z-10' />
-                <div className='bg-white border-4 w-full h-full rounded-3xl flex items-end justify-center p-1
-                ml-[5px] mt-[5px] group-hover:translate-x-[10px] group-hover:translate-y-[20px] duration-500'>
-                    <p className='font-bold'>James Jiang, P.E., Director</p>
                 </div>
             </div>
+            <hr className='border-1 border-black mt-6 mr-3'></hr>
         </div>
     )
 }

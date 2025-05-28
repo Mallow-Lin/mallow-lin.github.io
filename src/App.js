@@ -20,13 +20,6 @@ function App() {
         setNavbarHeight(value)
     }
 
-    const checkScreenSize = () => {
-        if (window.innerWidth >= 768) {
-            return true;
-        }
-    }
-
-
     return (
         <Router>
             <Navbar
@@ -34,15 +27,14 @@ function App() {
                 activeTabIndex={activeTabIndex}
                 setActiveTabIndex={setActiveTabIndex}
             />
+
             <div className="flex justify-center overflow-x-hidden">
-                <div className="md:w-[90%] shadow-2xl">
+                <div className="w-[90%] shadow-2xl">
                     <Routes>
                         <Route path="/" element={<Home setActiveTabIndex={setActiveTabIndex} />} />
                         <Route path="/About" element={<About
                             topPadding={navbarHeight}
-                            setActiveTabIndex={setActiveTabIndex}
-                        />}
-                        />
+                            setActiveTabIndex={setActiveTabIndex} />} />
                         <Route path="/Services" element={<Service topPadding={navbarHeight} />} />
                         <Route path="/Projects" element={<Projects topPadding={navbarHeight} />} />
                         <Route path="/Contact" element={<Contact topPadding={navbarHeight} />} />

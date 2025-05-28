@@ -14,21 +14,16 @@ const Home = (props) => {
         setActiveTabIndex
     } = props
 
-    const checkScreenSize = () => {
-        if (window.innerWidth < 768) {
-            return true;
-    }
-}
-
     return (
-        <div className = {`${checkScreenSize ? "w-full" : ""}`}>
-            <div>
-                <img src={headerImage} className='mx-auto w-30'/>
+        <div>
+            <div className='flex justify-center items-cente'>
+                <img src={headerImage} className='lg:h-[600px] my-20 md:my-0 mb-5'/>
             </div>
+
             <About />
             <Qualifications />
             <Services setActiveTabIndex={setActiveTabIndex} />
-            <div className='w-full justify-center flex'>
+            {/* <div className='w-full justify-center flex'>
                 <Link
                     onClick={() => {
                         setActiveTabIndex(2)
@@ -39,7 +34,7 @@ const Home = (props) => {
                     <p className='-mr-6 group-hover:mr-0 duration-500'>Check out our latest projects.</p>
                     <FontAwesomeIcon icon={faScrewdriverWrench} className='opacity-0 group-hover:flex group-hover:opacity-100 duration-500' />
                 </Link>
-            </div>
+            </div> */}
         </div>
     )
 }
