@@ -39,7 +39,7 @@ const About = () => {
                     <li>Excavation and Underpinning Oversight</li>
                 </div>
             </div>
-            <hr className='border-1 border-black mt-6 mr-3'></hr>
+            {/* <hr className='border-1 border-black mt-6 mr-3'></hr> */}
         </div>
     )
 }
