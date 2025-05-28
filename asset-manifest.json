@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/welldone-inspection-wbsite/static/css/main.619dbf6f.css",
-    "main.js": "/welldone-inspection-wbsite/static/js/main.dc3e5e43.js",
+    "main.css": "/welldone-inspection-wbsite/static/css/main.5d42531c.css",
+    "main.js": "/welldone-inspection-wbsite/static/js/main.629fdbbb.js",
     "static/media/headerImage.png": "/welldone-inspection-wbsite/static/media/headerImage.fe03bc9069d54acaa2aa.png",
     "static/media/logo_with_motto.png": "/welldone-inspection-wbsite/static/media/logo_with_motto.17053cda5e13924ed8ed.png",
     "static/media/logo_no_motto.png": "/welldone-inspection-wbsite/static/media/logo_no_motto.836d98171036401fdddf.png",
     "index.html": "/welldone-inspection-wbsite/index.html",
-    "main.619dbf6f.css.map": "/welldone-inspection-wbsite/static/css/main.619dbf6f.css.map",
-    "main.dc3e5e43.js.map": "/welldone-inspection-wbsite/static/js/main.dc3e5e43.js.map"
+    "main.5d42531c.css.map": "/welldone-inspection-wbsite/static/css/main.5d42531c.css.map",
+    "main.629fdbbb.js.map": "/welldone-inspection-wbsite/static/js/main.629fdbbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.619dbf6f.css",
-    "static/js/main.dc3e5e43.js"
+    "static/css/main.5d42531c.css",
+    "static/js/main.629fdbbb.js"
   ]
 }
