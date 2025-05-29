@@ -4,7 +4,7 @@ import logo_no_motto from '../../assets/images/logo_no_motto.png'
 
 const About = () => {
     return (
-        <div className='flex flex-col py:20 md:space-x-8 px-10 lg:px-40'>
+        <div className='justify-center flex pb-10 overflow-x-hidden'>
             <div className='flex flex-row'>
                 <div className='flex flex-col justify-between flex-grow'>
                     <div className='flex items-center'>
@@ -35,7 +35,6 @@ const About = () => {
                     <li>Soils, Footings, and Deep Foundations (Piles, Caissons, Helical Piers)</li>
                     <li>Wood Framing & Shear Walls</li>
                     <li>EIFS & Fireproofing</li>
-                    <li>Energy Code Compliance Inspections</li>
                     <li>Excavation and Underpinning Oversight</li>
                 </div>
             </div>

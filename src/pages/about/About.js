@@ -14,11 +14,11 @@ const About = (props) => {
     const { ref: blockRef, inView: blockInView } = useInView({})
 
     return (
-        <div className='justify-center flex pb-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
+        <div className='justify-center flex pb-10 overflow-x-hidden md:py-40' style={{ paddingTop: props.topPadding }}>
             <div ref={blockRef}
                 className={`flex flex-col items-center w-screen`} >
                 <SlideInWrapper isInView={blockInView} direction="top">
-                    <p className={`text-[20px] md:text-[40px] lg:text-[60px] font-semibold font-aleo mt-2 md:mt-12 lg:mt-20`}>About Us</p>
+                    <p className={`text-[20px] md:text-[40px] lg:text-[60px] font-semibold font-aleo`}>About Us</p>
                 </SlideInWrapper>
                 <div className='flex flex-col w-5/6 md:w-2/3 rounded-3xl py-10 items-center bg-gray-200'>
                     <div className='lg:flex sm:space-x-4 items-center sm:px-4'>
