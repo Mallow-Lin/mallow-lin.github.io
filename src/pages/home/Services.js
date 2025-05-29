@@ -8,9 +8,9 @@ const Services = (props) => {
     } = props
 
     return (
-        <div className='flex flex-col items-center justify-center bg-gray-100 sm:py-10'>
+        <div className='flex flex-col items-center justify-center bg-gray-100 mt-8'>
             <div className='font-semibold md:text-[50px] font-bold text-[20px]'>Services</div>
-            <div className='flex flex-wrap gap-6 items-center justify-center py-5 sm:py-10'>
+            <div className='flex flex-wrap gap-6 items-center justify-center mt-3'>
                 {
                     services.map((service, index) => {
                         return <ServiceCard key={index} service={service} setActiveTabIndex={setActiveTabIndex} />

@@ -3,13 +3,13 @@ import React from 'react'
 const Qualifications = () => {
 
     return (
-        <div className='flex space-x-8 px-10 py-5 py-10 lg:px-40'>
+        <div className='flex space-x-8 mt-5 px-10 lg:px-40'>
             <div className='flex flex-col justify-between flex-grow'>
                 <div className='flex items-center'>
                     <p className='md:text-[35px] font-bold text-[20px]'>Qualifications</p>
                     <hr className='border-1 border-black flex-grow mx-4'></hr>
                 </div>
-                <h2 className='font-serif gap-4 mt-6 mb-6 md:text-[20px] mb-6 text-[15px]'>
+                <h2 className='font-serif gap-4 mt-3 md:text-[20px] text-[15px]'>
                     <p>NY / NJ State Licensed P.E. with Structural and Geotechnical Background</p>
                     <p>AWS Certified Welding Inspector</p>
                     <p>ICC Master of Special Inspection</p>
