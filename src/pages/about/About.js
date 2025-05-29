@@ -14,7 +14,7 @@ const About = (props) => {
     const { ref: blockRef, inView: blockInView } = useInView({})
 
     return (
-        <div className='justify-center flex pb-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
+        <div className='justify-center flex pb-10 overflow-x-hidden  mt-5' style={{ paddingTop: props.topPadding }}>
             <div ref={blockRef}
                 className={`flex flex-col items-center w-screen`} >
                 <SlideInWrapper isInView={blockInView} direction="top">

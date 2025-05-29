@@ -25,8 +25,8 @@ const Service = (props) => {
 
     return (
         <div>
-            <div className='flex flex-col p-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
-                <p className='font-semibold font-aleo md:text-[35px] font-bold text-[20px] mt-5'>Services</p>
+            <div className='flex flex-col p-10 overflow-x-hidden  mt-5' style={{ paddingTop: props.topPadding }}>
+                <p className='font-semibold font-aleo md:text-[35px] font-bold text-[20px]'>Services</p>
                 <div className='md:flex'>
                 <div className='md:w-1/2'>
                     {
