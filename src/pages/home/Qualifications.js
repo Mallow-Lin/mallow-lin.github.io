@@ -14,7 +14,7 @@ const Qualifications = () => {
                     <p>AWS Certified Welding Inspector</p>
                     <p>ICC Master of Special Inspection</p>
                     <p>ICC Certified Concrete, Mansory, Welding, Bolting, Mechanical</p>
-                    <p>ACI Concrete Certified Inspector / Technicia</p>
+                    <p>ACI Concrete Certified Inspector / Technician</p>
                     <p>LEED AP</p>
                     <p>PMI Project Management Professionals</p>
                     <p></p>
