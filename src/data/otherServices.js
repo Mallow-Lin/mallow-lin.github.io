@@ -8,14 +8,6 @@ const otherServices = [
         link: ""
     },
     {
-    title: "Engineering",
-    name: "Engineering",
-    shortDescription: "PE stamp, Professional Certification, Engineer Calculation, Special Inspection, Local Law, ACP5, Sign off",
-    longDescription: "PE stamp, Professional Certification, Engineer Calculation, Special Inspection, Local Law, ACP5, Sign off",
-    background: "https://www1.nyc.gov/assets/buildings/images/content/newsletter/DSC_5636.jpg",
-    link: ""
-},
-    {
     title: "Expediting",
     name: "Expediting",
     shortDescription: "DOB filing, DOB permit, Violations, ECB, DOB meeting, DOT filing, DOT meeting, DOT permit, Code Issues",

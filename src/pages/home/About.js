@@ -15,10 +15,10 @@ const About = () => {
                         <p className="">WellDone Inspection, Inc. is a New York City–based DOB-registered Special Inspection Agency dedicated to delivering accurate, code-compliant, and timely special inspections for construction projects of all scales. As a small business, we pride ourselves on offering the attention to detail, responsiveness, and accountability that larger firms often can't match.</p>
                     </h2>
                 </div>
-                <div className='group relative ml-1 md:ml-5 flex-none size-[100px] md:size-[150px]'>
-                    <img src={logo_no_motto} alt='logo' className='absolute w-full h-full object-fill border-2 rounded-3xl bg-white ml-[-5px] mt-[-5px] group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 z-10' />
+                <div className='group relative ml-2 md:ml-5 flex-none size-[100px] md:size-[150px]'>
+                    <img src={logo_no_motto} alt='logo' className='absolute w-full h-full object-fill border-2 rounded-3xl bg-white group-hover:translate-x-[-10px] group-hover:translate-y-[-10px] duration-500 z-10' />
                     <div className='bg-white border-4 w-full h-full rounded-3xl flex items-end justify-center p-1
-                    ml-[20px] mt-[35px] md:ml-[0px] md:mt-[0px]  md:group-hover:translate-x-[10px] md:group-hover:translate-y-[30px] duration-500'>
+                    ml-[15px] mt-[35px] md:ml-[0px] md:mt-[10px]  md:group-hover:translate-x-[10px] md:group-hover:translate-y-[30px] duration-500'>
                         <p className='font-bold text-[10px] md:text-sm'>James Jiang, P.E., Director</p>
                     </div>
                 </div>
