@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/welldone-inspection-wbsite/static/css/main.5d42531c.css",
-    "main.js": "/welldone-inspection-wbsite/static/js/main.e6d94723.js",
-    "static/media/headerImage.png": "/welldone-inspection-wbsite/static/media/headerImage.fe03bc9069d54acaa2aa.png",
-    "static/media/logo_with_motto.png": "/welldone-inspection-wbsite/static/media/logo_with_motto.17053cda5e13924ed8ed.png",
-    "static/media/logo_no_motto.png": "/welldone-inspection-wbsite/static/media/logo_no_motto.836d98171036401fdddf.png",
-    "index.html": "/welldone-inspection-wbsite/index.html",
-    "main.5d42531c.css.map": "/welldone-inspection-wbsite/static/css/main.5d42531c.css.map",
-    "main.e6d94723.js.map": "/welldone-inspection-wbsite/static/js/main.e6d94723.js.map"
+    "main.css": "/static/css/main.5d42531c.css",
+    "main.js": "/static/js/main.14a034b3.js",
+    "static/media/headerImage.png": "/static/media/headerImage.fe03bc9069d54acaa2aa.png",
+    "static/media/logo_with_motto.png": "/static/media/logo_with_motto.17053cda5e13924ed8ed.png",
+    "static/media/logo_no_motto.png": "/static/media/logo_no_motto.836d98171036401fdddf.png",
+    "index.html": "/index.html",
+    "main.5d42531c.css.map": "/static/css/main.5d42531c.css.map",
+    "main.14a034b3.js.map": "/static/js/main.14a034b3.js.map"
   },
   "entrypoints": [
     "static/css/main.5d42531c.css",
-    "static/js/main.e6d94723.js"
+    "static/js/main.14a034b3.js"
   ]
 }
