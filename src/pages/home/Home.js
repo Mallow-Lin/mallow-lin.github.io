@@ -16,7 +16,7 @@ const Home = (props) => {
 
     return (
         <div>
-            <div className='flex justify-center items-cente'>
+            <div className='flex justify-center items-center'>
                 <img src={headerImage} className='lg:h-[600px] my-20 md:my-0 mb-5'/>
             </div>
 
