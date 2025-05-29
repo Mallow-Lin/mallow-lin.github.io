@@ -23,7 +23,7 @@ const Home = (props) => {
             <About />
             <Qualifications />
             <Services setActiveTabIndex={setActiveTabIndex} />
-            <div className='w-full justify-center flex'>
+            <div className='w-full justify-center flex lg:mt-5'>
                 <Link
                     onClick={() => {
                         setActiveTabIndex(2)

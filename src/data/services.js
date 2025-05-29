@@ -41,6 +41,14 @@ const services = [
         background: "https://images.finehomebuilding.com/app/uploads/2021/03/19162754/H246KU_0253.jpg",
         link: "https://www.nyc.gov/assets/buildings/pdf/tr8.pdf"
     },
+        {
+        title: "Engineering Design",
+        name: "Engineering Design",
+        shortDescription: "Engineering Design, Filling, Consulting",
+        longDescription: "Engineering Design, Filling, Consultinge",
+        background: "https://www.strath.ac.uk/media/1newwebsite/courses/engineering/600x600/Design_engineering.jpg",
+        link: ""
+    }
 ]
 
 export default services

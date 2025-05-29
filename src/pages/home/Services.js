@@ -9,8 +9,8 @@ const Services = (props) => {
 
     return (
         <div className='flex flex-col items-center justify-center bg-gray-100 mt-8'>
-            <div className='font-semibold md:text-[50px] font-bold text-[20px]'>Services</div>
-            <div className='flex flex-wrap gap-6 items-center justify-center mt-3'>
+            <div className='font-semibold md:text-[50px] font-bold text-[20px] mt-5'>Services</div>
+            <div className='flex flex-wrap gap-6 items-center justify-center mt-5'>
                 {
                     services.map((service, index) => {
                         return <ServiceCard key={index} service={service} setActiveTabIndex={setActiveTabIndex} />
@@ -29,7 +29,7 @@ const ServiceCard = (props) => {
     } = props
 
     return (
-        <div className={`group h-[200px] w-[180px] md:h-[200px] md:w-[200px] lg:h-[260px] lg:w-[260px] bg-[#808080] rounded-xl shadow-card overflow-hidden flex relative justify-center items-center duration-[0.8s]
+        <div className={`group h-[180px] w-[180px] md:h-[200px] md:w-[200px] lg:h-[260px] lg:w-[260px] bg-[#808080] rounded-xl shadow-card overflow-hidden flex relative justify-center items-center duration-[0.8s]
         bg-center bg-no-repeat bg-[length:300px] hover:bg-left hover:bg-[length:600px]`}
             style={{ backgroundImage: `url(${service.background})` }}>
             <p className='absolute text-[12px] sm:text-sm md:text-sm lg:text-xl font-bold top-0 w-full text-white p-3 bg-black group-hover:bg-transparent'>{service.title}</p>

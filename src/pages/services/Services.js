@@ -25,7 +25,7 @@ const Service = (props) => {
 
     return (
         <div>
-            <div className='flex flex-col p-10 overflow-x-hidden  mt-5' style={{ paddingTop: props.topPadding }}>
+            <div className='flex flex-col p-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
                 <p className='font-semibold font-aleo md:text-[35px] font-bold text-[20px]'>Services</p>
                 <div className='md:flex'>
                 <div className='md:w-1/2'>
@@ -34,7 +34,7 @@ const Service = (props) => {
                             return (
                                 <div key={index} ref={serviceRefs[index]}>
                                     <SlideInWrapper
-                                        className="flex space-x-10 border-t-2 border-gray-400 py-6 w-full" isInView={isLargeScreen ? true : true} direction={index % 2 === 0 ? "left" : "right"}
+                                        className="flex space-x-10 border-t-2 border-gray-400 py-2 w-full" isInView={isLargeScreen ? true : true} direction={index % 2 === 0 ? "left" : "right"}
                                     >
                                         <ServiceCard service={service} />
                                         <div className='flex flex-col justify-center items-start space-y-6 text-[12px] md:text-md lg:text-lg'>
@@ -58,7 +58,7 @@ const Service = (props) => {
                             return (
                                 <div key={index} ref={serviceRefs[index]}>
                                     <SlideInWrapper
-                                        className="flex space-x-10 border-t-2 border-gray-400 py-6" isInView={isLargeScreen ? true : true} direction={index % 2 === 0 ? "left" : "right"}
+                                        className="flex space-x-10 border-t-2 border-gray-400 py-2" isInView={isLargeScreen ? true : true} direction={index % 2 === 0 ? "left" : "right"}
                                     >
                                         <ServiceCard service={service} />
                                         <div className='flex flex-col justify-center items-start space-y-6 text-[12px] md:text-md lg:text-lg'>

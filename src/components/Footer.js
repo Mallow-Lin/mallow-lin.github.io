@@ -11,7 +11,7 @@ const Footer = (props) => {
     } = props
 
     return (
-        <div className='flex flex-col justify-center bg-[#1b6666]'>
+        <div className='flex flex-col justify-center bg-[#1b6666] lg:mt-5'>
             <div className='flex justify-center items-center h-[200px] lg:h-[260px] py-14'>
                 <div className='flex flex-col w-[320px] space-y-2 mx-2 md:mx-10 lg:mx-20'>
                     <img src={mottoLogo} alt='logo' className='w-[200px]' />
@@ -52,11 +52,11 @@ const Footer = (props) => {
                     </div>
                     <div className='flex space-x-2 sm:space-x-4 items-center text-[10px] md:text-[12px] lg:text-[15px]'>
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <p className='text-[10px] md:text-[15px] lg:text-[18px] font-merriweather'>welldoneinspect@gmail.com</p>
+                        <p className='text-[10px] md:text-[12px] lg:text-[15px] font-merriweather'>welldoneinspect@gmail.com</p>
                     </div>
                     <div className='flex space-x-2 sm:space-x-4 items-center text-[10px] md:text-[12px] lg:text-[15px]'>
                         <FontAwesomeIcon icon={faPhone} />
-                        <p className='text-[10px] md:text-[15px] lg:text-[18px] font-merriweather'>(917) 213-1886</p>
+                        <p className='text-[10px] md:text-[12px] lg:text-[15px] font-merriweather'>(917) 213-1886</p>
                     </div>
                 </div>
             </div>

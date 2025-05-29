@@ -14,13 +14,13 @@ const About = (props) => {
     const { ref: blockRef, inView: blockInView } = useInView({})
 
     return (
-        <div className='justify-center flex pb-10 overflow-x-hidden  mt-5' style={{ paddingTop: props.topPadding }}>
+        <div className='justify-center flex pb-10 overflow-x-hidden' style={{ paddingTop: props.topPadding }}>
             <div ref={blockRef}
                 className={`flex flex-col items-center w-screen`} >
                 <SlideInWrapper isInView={blockInView} direction="top">
-                    <p className={`text-[20px] md:text-[40px] lg:text-[60px] font-semibold font-aleo`}>About Us</p>
+                    <p className={`text-[20px] md:text-[35px] font-semibold font-aleo`}>About Us</p>
                 </SlideInWrapper>
-                <div className='flex flex-col w-5/6 md:w-2/3 rounded-3xl py-10 items-center bg-gray-200'>
+                <div className='flex flex-col w-[90%] md:w-2/3 rounded-3xl py-10 items-center bg-gray-200'>
                     <div className='lg:flex sm:space-x-4 items-center sm:px-4'>
                         <SlideInWrapper className="flex flex-col relative items-center group" isInView={blockInView} direction="left">
                             <img src={Logo} className='object-contain group-hover:scale-75 group-hover:-mt-10 duration-500 w-[100px] sm:w-[200px] lg:w-full'></img>
@@ -40,7 +40,8 @@ const About = (props) => {
                                     <li>Wood Framing & Shear Walls</li>
                                     <li>EIFS & Fireproofing</li>
                                     <li>Energy Code Compliance Inspections</li>
-                                    <li>Excavation and Underpinning Oversight</li>                            </div>
+                                    <li>Excavation and Underpinning Oversight</li>
+                            </div>
                         </SlideInWrapper>
                     </div>
                     <SlideInWrapper className="w-full flex justify-center" isInView={blockInView} direction="bottom">

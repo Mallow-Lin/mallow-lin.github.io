@@ -3,7 +3,7 @@ import React from 'react'
 const Qualifications = () => {
 
     return (
-        <div className='flex space-x-8 mt-5 px-10 lg:px-40'>
+        <div className='flex space-x-8 mt-5 px-5 md:px-10 lg:px-40'>
             <div className='flex flex-col justify-between flex-grow'>
                 <div className='flex items-center'>
                     <p className='md:text-[35px] font-bold text-[20px]'>Qualifications</p>
