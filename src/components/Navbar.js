@@ -87,7 +87,7 @@ const Navbar = (props) => {
 
                 </div>
                 {/* Desktop menu */}
-                <div className={`hidden md:flex flex w-[550px] items-center h-12  font-semibold duration-500 ${collapsed ? "text-lg" : "text-xl"} relative`}>
+                <div className={`hidden md:flex w-[550px] items-center h-12  font-semibold duration-500 ${collapsed ? "text-lg" : "text-xl"} relative`}>
                     <span
                         className='absolute top-0 bottom-0 -z-10 flex overflow-hidden dureation-300 rounded-xl bg-[#1b6666] w-full duration-300'
                         style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }} />
