@@ -32,7 +32,9 @@ const Navbar = (props) => {
     const [collapsed, setCollapsed] = useState(false);
 
     const [nav, setNav] = useState(false);
-    const handleClick = () => setNav(!nav);
+    const toggleNav = () => {
+        setNav(!nav);
+    }
 
     const navigator = useNavigate()
 
@@ -113,7 +115,7 @@ const Navbar = (props) => {
                 </div>
 
                 {/* Hamburger */}
-                <div onClick={handleClick} className='md:hidden z-10 py-8 cursor-pointer'>
+                <div onClick={toggleNav} className='md:hidden z-10 py-8 cursor-pointer'>
                     {!nav ? <FaBars className='size-[20px]' /> : <FaTimes />}
                 </div>
 
@@ -124,7 +126,10 @@ const Navbar = (props) => {
                         tabs.map((tab, index) => {
                             const isActive = activeTabIndex === index
                             return <li key={index} className="my-2 text-md text-white cursor-pointer">
-                                <Link onClick={handleClick} to={`/${tab}`} spy={true} smooth={true} offset={tab.offset} duration={500}> {tab} </Link>
+                                <Link onClick={_ => {
+                                    toggleNav()
+                                    window.scrollTo(0, 0)
+                                }} to={`/${tab}`} spy={true} smooth={true} offset={tab.offset} duration={500}> {tab} </Link>
                                 </li>
                         })
                     }
